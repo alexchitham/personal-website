@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alex Chitham</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bayon&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="icon" href="img/cs-grad-icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <script src="https://kit.fontawesome.com/aa74aa7adb.js" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    </head>
+    <body>
+        <header class="main-header" id="main-header">
+            <div class= title>
+                <h1><a href="index.html">Alex Chitham</a></h1>
+            </div>
+            <div class="nav-with-icon" id="nav-bar">
+                <a class="nav-icon" onclick="shrinkNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home" class="nav-link" onclick="shrinkNav()">HOME</a></li>
+                        <li><a href="#about" class="nav-link" onclick="shrinkNav()">ABOUT</a></li>
+                        <li><a href="#skills" class="nav-link" onclick="shrinkNav()">SKILLS</a></li>
+                        <li><a href="#projects" class="nav-link" onclick="shrinkNav()">PROJECTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="page-body">
+            <div class="home-page">
+                <section class="home" id="home">
+                    <div>
+                        <h2 class="introduce">Hi, I'm Alex</h2>
+                        <p class="home-status">
+                            SOFTWARE ENGINEER / COMPUTER SCIENCE STUDENT
+                        </p>
+                        <p class="contact-info">
+                            alexchitham@hotmail.co.uk
+                            <br>
+                            (+44) 07980 662340
+                        </p>
+                        <div class="links">
+
+                            <a href="CV Alex Chitham.pdf">
+                                <i class="fa-solid fa-file-lines fa-3x link-icon" title="CV"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/alex-chitham/">
+                                <i class="fa-brands fa-linkedin fa-3x link-icon" title="LinkedIn"></i>
+                            </a>
+
+                            <a href="https://github.com/alexchitham">
+                                <i class="fa-brands fa-github fa-3x link-icon" title="GitHub"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="img/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                </section>
+            </div>
+
+            <hr class="section-divider">
+            <div class="main-body">
+
+                <div class="section-container" id="about">
+                    <section class="about section section-card">
+                        <h3 class="section-title">About Me</h3>
+                        <div class="main-text">
+                            <p>
+                                I am a recent Computer Science graduate, currently looking for a Software Engineering graduate role in London.
+                                As part of my degree, I spent a year working at PQShield, an Oxford-based start-up specialising in post-quantum cryptography.
+                                I believe this industry experience, along with my consistently strong academic performance, will enable me to be successful in any technical role.
+                            </p>
+                        </div>
+
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div>
+                                    <i class="fa-solid fa-graduation-cap fa-3x" style="color: #ffcc66;"></i>
+                                </div>
+                                <div class="education-text">
+                                    First in Computer Science from the University of Bath
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div>
+                                    <i class="fa-solid fa-school fa-3x" style="color: #ffcc66;"></i>
+                                </div>
+                                <div class="education-text">
+                                    A-levels: A* in Computer Science, Maths, Further Maths, Physics
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div>
+                                    <i class="fa-solid fa-pen fa-3x" style="color: #ffcc66;"></i>
+                                </div>
+                                <div class="education-text">
+                                    GCSEs: Five 9s, three 8s, two 7s including Maths (9) and English (7)
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="section-container" id="skills">
+                    <section class="skills section section-card">
+                        <h3 class="section-title">Technical Skills</h3>
+                        <div class="main-text">
+                            <section>
+                                <h4> <i class="fa-solid fa-code" style="color: #ffcc66;"></i> Languages and Build Systems</h4>
+                                <ul>
+                                    <li><strong>C</strong> - Used professionally with the CMake build system on commercial projects</li>
+                                    <li><strong>Python</strong> - Including for data processing, AI and machine learning projects </li>
+                                    <li><strong>Java</strong> - Experience with OOP and data structures</li>
+                                    <li><strong>C++</strong> - Modified a ray tracer code template to create complex images</li>
+                                    <li><strong>C#</strong> - Developed a 3/4 view stealth game in Unity</li>
+                                    <li><strong>Dart</strong> - Currently learning mobile app development via Udemy</li>
+                                    <li><strong>HTML, CSS</strong> - Used in building this portfolio website</li>
+                                    <li><strong>Haskell</strong> - Experience in functional programming coursework</li>
+                                    <li><strong>SQL</strong> - Knowledge of declarative query languages</li>
+                                </ul>
+                                <div class="tech-icon-row">
+                                    <img src="icons/c.png" alt="C logo">
+                                    <img src="icons/cmake.png" alt="CMake logo">
+                                    <img src="icons/python.png" alt="Python logo">
+                                    <img src="icons/java.png" alt="Java logo">
+                                    <img src="icons/c++.png" alt="C++ logo">
+                                    <img src="icons/html.png" alt="HTML logo">
+                                    <img src="icons/css.png" alt="CSS logo">
+                                </div>
+                            </section>
+                            
+                            <section>
+                                <h4> <i class="fa-solid fa-code-pull-request" style="color: #ffcc66;"></i> Software Engineering Skills</h4>
+                                <ul>
+                                    <li><strong>Version Control</strong> - Proficient with Git, including complex rebase commands, and GitHub</li>
+                                    <li><strong>Development Environments</strong> - Competent using Linux command line</li>
+                                    <li><strong>Methodologies</strong> - Experience in Agile/Scrum and Kanban, with Jira to monitor progress and keep on track with large commercial projects.</li>
+                                    <li><strong>CI/CD</strong> - Used GitLab pipelines for automated builds and verification</li>
+                                    <li><strong>Docker</strong> - Built and ran complex products with multiple Dockerfiles</li>
+                                    <li><strong>Static Analysis in C</strong> - Used tools to ensure code developed was CERT-C and Clang compliant</li>
+                                </ul>
+                                <div class="tech-icon-row">
+                                    <img src="icons/git.png" alt="Git logo">
+                                    <img src="icons/github.png" alt="GitHub logo">
+                                    <img src="icons/linux.png" alt="Linux logo">
+                                    <img src="icons/atlassian.png" alt="Atlassian logo">
+                                    <img src="icons/gitlab.png" alt="GitLab logo">
+                                    <img src="icons/docker.png" alt="Docker logo">
+                                </div>
+                            </section>
+                            
+                            <section>
+                                <h4> <i class="fa-solid fa-laptop-code" style="color: #ffcc66;"></i> Libraries and Frameworks</h4>
+                                <ul>
+                                    <li><strong>NumPy</strong> - For data manipulation and analysis</li>
+                                    <li><strong>PyTorch</strong> - Used for training deep reinforcement learning agents</li>
+                                    <li><strong>NLTK</strong> - Used for natural language processing, extracting tokens out of large datasets</li>
+                                    <li><strong>OpenAI Gym</strong> - Library that provides reinforcement learning environments</li>
+                                    <li><strong>Unity</strong> - Developed a 2D stealth game using C# and pixel art animations</li>
+                                    <li><strong>Flutter</strong> - Learning app development through a Udemy course</li>
+                                </ul>
+                                <div class="tech-icon-row">
+                                    <img src="icons/numpy.png" alt="NumPy logo">
+                                    <img src="icons/pytorch.png" alt="PyTorch logo">
+                                    <img src="icons/unity.png" alt="Unity logo">
+                                    <img src="icons/flutter.png" alt="Flutter logo">
+                                </div>
+                            </section>
+                            
+                            <section>
+                                <h4> <i class="fa-solid fa-gear" style="color: #ffcc66;"></i> Other Technical Skills</h4>
+                                <ul>
+                                    <li><strong>IDEs</strong> - Competent using VSCode, Visual Studio, and experience with Android Studio and Eclipse</li>
+                                    <li><strong>Operating Systems</strong> - Competent across Windows, macOS, and Linux (Ubuntu)</li>
+                                    <li><strong>Technical Documentation</strong> - Used Latex typesetting for formal reports</li>
+                                    <li><strong>Virtualisation</strong> - Experience using virtual machines</li>
+                                    <li><strong>Productivity Tools</strong> - Microsoft Office and Google Workspace</li>
+                                    <li><strong>Project Management</strong> - Familiar with Jira and Confluence</li>
+                                    <li><strong>Computer Construction</strong> - Built my own desktop for productivity and gaming</li>
+                                </ul>
+                                <div class="tech-icon-row">
+                                    <img src="icons/vscode.png" alt="VSCode logo">
+                                    <img src="icons/vs.png" alt="Visual Studio logo">
+                                    <img src="icons/windows.png" alt="Windows logo">
+                                    <img src="icons/ubuntu.png" alt="Ubuntu logo">
+                                    <img src="icons/latex.png" alt="Latex logo">
+                                    <img src="icons/office.png" alt="Office logo">
+                                    <img src="icons/google.png" alt="Google logo">
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="section-container" id="projects">
+                    <section class="projects section section-card">
+                        <h3 class="section-title">Projects</h3>
+                        <div class="main-text">
+
+                            <section>
+                                <h4> <i class="fa-solid fa-robot" style="color: #ffcc66;"></i> Explainable Reinforcement Learning Dissertation - Python</h4>
+                                <ul>
+                                    <li>Implemented two state-of-the-art explainable reinforcement learning methods 
+                                        from scratch on an autonomous driving environment.</li>
+                                    <li>Assessed the effectiveness of each method at generating clear and meaningful explanations
+                                        of the autonomous driving agent.
+                                    </li>
+                                    <li>Compared the two methods against each other and explored why their results may have
+                                        differed.
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h4><i class="fa-solid fa-lock" style="color: #ffcc66;"></i> PQNoise - C</h4>
+                                <ul>
+                                    <li>For PQShield, I co-wrote a C library for a post quantum secure communication protocol, called PQNoise. </li>
+                                    <li>Used a static analysis tool to comply with CERT-C standards throughout development.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h4><i class="fa-solid fa-user-lock" style="color: #ffcc66;"></i> Cryptopals - C</h4>
+                                <ul>
+                                    <li>Completed the first 16 challenges of Cryptopals using C.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h4><i class="fa-solid fa-images" style="color: #ffcc66;"></i> Raytracer - C++</h4>
+                                <ul>
+                                    <li>Took a basic raytracer in C++ and added support for complex objects and interactions such as reflection, refraction, 
+                                        and photon mapping.
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h4><i class="fa-solid fa-gamepad" style="color: #ffcc66;"></i> Atari Breakout Reinforcement Learning Agent - Python</h4>
+                                <ul>
+                                    <li>Implemented a DQN reinforcement learning agent to play the Atari breakout game to a super human level in python.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h4><i class="fa-solid fa-globe" style="color: #ffcc66;"></i> Personal Website - HTML and CSS</h4>
+                                <ul>
+                                    <li>Designed and implemented this website from scratch with no template, using HTML and CSS. </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h4><i class="fa-solid fa-film" style="color: #ffcc66;"></i> IMDb Movie Review Classifier - Python</h4>
+                                <ul>
+                                    <li>Used natural language processing techniques to extract features from movie reviews to classify them
+                                        as positive or negative.
+                                    </li>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </section>
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+            function shrinkNav() {
+              var x = document.getElementById("nav-bar");
+              if (x.className === "nav-with-icon") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav-with-icon";
+              }
+              var y = document.getElementById("main-header");
+              if (y.className === "main-header") {
+                y.className += " responsive";
+              } else {
+                y.className = "main-header";
+              }
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll(".nav-link");
+
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    const headerOffset = 100; // height of the fixed header
+                    const elementPosition = targetElement.offsetTop;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+        </script>
+    </body>
+</html>

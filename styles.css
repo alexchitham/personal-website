@@ -1,0 +1,429 @@
+/* --------------------- WHOLE WEBSITE -------------------------- */
+
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    
+}
+
+:root {
+    --content-width: 1000px;
+}
+
+html, body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 18, 18);
+}
+
+
+
+/* --------------------- HEADER / NAV BAR -------------------------- */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-size: 1.1em;
+    height: 100px;
+    background-color: #282828
+}
+
+.title h1 {
+    margin-top: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 16px 0;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+
+.title a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 1.6em;
+}
+
+.nav ul {
+    text-wrap: nowrap;
+    padding-inline-start: 0;
+    font-size: 1.2em;
+    margin-right: 50px;
+}
+
+.nav li {
+    display: inline;
+    position: relative;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav a:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+
+.nav-with-icon .nav-icon {
+    display: none;
+}
+
+
+
+/* --------------------- GENERAL PAGE BODY -------------------------- */
+
+.page-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--content-width);
+    font-size: 1.2em;
+}
+
+.section-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding: 25px;
+    font-size: 1.2em;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-text {
+    color: rgb(187, 187, 187);
+}
+
+h4 {
+    color: white;
+    /* text-align: center; */
+}
+
+.section-title {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    font-size: 4em;
+    color: rgb(68, 119, 206);
+    font-family: "Delius", sans-serif;
+}
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background: #333;
+    margin: 60px auto;
+    width: 60%;
+    opacity: 0.9;
+}
+
+.section-card {
+    background-color: rgb(23, 23, 23);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* --------------------- HOME PAGE -------------------------- */
+
+.home-page {
+    padding-top: 80px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.home-status {
+    text-align: center;
+    font-size: 2.6em;
+    font-family: "Bayon", "sans-serif";
+    margin: 7px;
+    color: rgb(68, 119, 206)
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.introduce {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    font-size: 6em;
+}
+
+.profile-pic {
+    height: auto;
+    max-width: 650px;
+    padding: 25px
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+.links a:hover {
+    background-color: rgb(77, 79, 102);
+}
+
+.link-icon {
+    padding: 10px;
+    color: #ffffff;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.link-icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* --------------------- ABOUT PAGE -------------------------- */
+
+.education-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    margin: 1rem;
+}
+
+.education-text {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+
+
+/* --------------------- SKILLS PAGE -------------------------- */
+
+.skills section {
+    background-color: #1e1e1e;
+    padding: 1.0rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.skills section:hover {
+    transform: translateY(-4px);
+}
+
+.tech-icon-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tech-icon-row img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.tech-icon-row img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* --------------------- PROJECTS PAGE -------------------------- */
+
+.projects section {
+    background-color: #1e1e1e;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.projects section:hover {
+    transform: translateY(-4px);
+}
+
+
+
+/* --------------------- RESPONSIVENESS AND RESIZING -------------------------- */
+
+@media screen and (max-width: 1500px) {
+    .profile-pic {
+        height: auto;
+        max-width: 500px;
+    }
+
+    .home {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .nav ul {display: none;}
+    .nav-with-icon a.nav-icon {
+        display: block;
+        padding: 0;
+        color: white;
+        font-size: 2em;
+        margin-right: 45px;
+    }
+
+    .main-header.responsive {
+        display: block;
+    }
+
+    .nav-with-icon.responsive ul {
+        display: block;
+        top: 100%;
+        font-size: 1em;
+        max-width: 240px;
+        padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav-with-icon.responsive .nav-icon {
+        position: fixed;
+        right: 0;
+        top: 32px;
+        font-size: 2em;
+    }
+    .nav-with-icon.responsive a {
+        text-align: center;
+        display: block;
+        
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .home {
+        flex-direction: column-reverse;
+        font-size: 1.0em;
+    }
+
+    .profile-pic {
+        height: auto;
+        max-width: 440px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .title a {
+        font-size: 0.8em;
+    }
+
+    .title h1 {
+        padding-top: 33px;
+        padding-bottom: 32px;
+        padding-left: 30px;
+    }
+
+    .profile-pic {
+        height: auto;
+        max-width: 250px;
+    }
+
+    .home-page {
+        padding-top: 90px;
+    }
+
+    .home {
+        font-size: 0.7em;
+        justify-content: flex-end;
+    }
+
+    .introduce {
+        font-size: 5em;
+    }
+
+    #about {
+        font-size: 1em;
+        background-color: lightblue;
+    }
+    
+    #skills {
+        font-size: 1em;
+    }
+    
+    #projects {
+        font-size: 1em;
+    }
+
+    #qualifications {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .profile-pic {
+        height: auto;
+        max-width: 230px;
+    }
+}
+
