@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background-color: snow;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: aliceblue;  
+    display: flex;      
+}
+
+.title {
+    background-color: whitesmoke;
+    margin-left: 2%;
+    align-self: flex-start;
+}
+
+.nav {
+    background-color: whitesmoke;
+    margin-left: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    padding: 0.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+    float: left;
+    height: 318px;
+    width: 200px;
+    margin: 15px;
+    margin-top: 0px;
+}
