@@ -1,44 +1,66 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 html, body {
-    background-color: snow;
+    background-color: linen;
     margin: 0;
     padding: 0;
 }
 
 .main-header {
-    background-color: aliceblue;  
-    display: flex;      
+    display: flex;    
+    font-size: 1.2em;  
+    align-items: center;
 }
 
-.title {
-    background-color: whitesmoke;
-    margin-left: 2%;
-    align-self: flex-start;
+.title a{
+    margin-left: 2vw;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: black;
 }
 
 .nav {
-    background-color: whitesmoke;
-    margin-left: 70%;
+    margin-left: 70vw;
+    position: absolute;
+    right: 20vw;
     align-self: center;
-    text-align: center;
+    text-wrap: nowrap;
 }
 
 .nav li {
     display: inline;
+    position: relative;
 }
 
 .nav a {
     padding: 0.5em;
     color: black;
     text-decoration: none;
+    letter-spacing: 0.12em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
 }
 
-.nav a:hover {
-    text-decoration: underline;
-    background-color: rgba(0, 0, 0, 0.3);
+.nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav a:hover:after {
+    width: 100%; 
+    left: 0; 
 }
 
 .profile-pic {
