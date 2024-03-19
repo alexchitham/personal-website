@@ -1,7 +1,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 html, body {
@@ -33,7 +33,6 @@ html, body {
     margin-top: 0;
     margin-block-start: 0;
     margin-block-end: 0;
-   
     text-wrap: nowrap;
 }
 
@@ -90,11 +89,15 @@ html, body {
     width: 100%;
 }
 
+.section-container {
+    width: 100%;
+}
+
 .section {
     padding: 1em;
     font-size: 1.2em;
     max-width: 1000px;
-    align-self: center;
+    margin: auto;
 
 }
 
@@ -106,6 +109,7 @@ html, body {
     padding: 1em;
     font-size: 1.2em;
 }
+
 
 .home-status {
     text-align: center;
@@ -121,9 +125,22 @@ html, body {
 }
 
 .profile-pic {
-    max-height: 748px;
-    max-width: 500px;
-    border-radius: 20%;
+    height: auto;
+    max-width: 700px;
+    padding: 25px
+}
+
+@media screen and (max-width: 1500px) {
+    .profile-pic {
+        height: auto;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .profile-pic {
+        display: none;
+    }
 }
 
 .links {
@@ -144,12 +161,20 @@ html, body {
 
 .about {
     background-color: rgb(3, 36, 44);
-    align-self: left;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+}
+
+.about-para {
+    width: 250px;
+    padding: 0 15px;
 }
 
 .contact {
     background-color: rgb(3, 36, 44);
-    align-self: right;
 }
 
 h3 {
