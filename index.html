@@ -8,17 +8,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <link rel="icon" href="img/software-engineer-icon.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header class="main-header">
-            <div>
-                <h1 class="title"><a href="index.html">Alex Chitham</a></h1>
+        <header class="main-header" id="main-header">
+            <div class= title>
+                <h1><a href="index.html">Alex Chitham</a></h1>
             </div>
-            <div class="nav">
-                <nav>
+            <div class="nav-with-icon" id="nav-bar">
+                <a class="nav-icon" onclick="shrinkNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <nav class="nav">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="index.html">ABOUT</a></li>
@@ -137,5 +142,22 @@
                 </section>
             </div>
         </div>
+
+        <script>
+            function shrinkNav() {
+              var x = document.getElementById("nav-bar");
+              if (x.className === "nav-with-icon") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav-with-icon";
+              }
+              var y = document.getElementById("main-header");
+              if (y.className === "main-header") {
+                y.className += " responsive";
+              } else {
+                y.className = "main-header";
+              }
+            }
+        </script>
     </body>
 </html>
