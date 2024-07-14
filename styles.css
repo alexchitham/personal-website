@@ -1,11 +1,15 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    /*border: 1px solid red;*/
     
 }
 
+:root {
+    --content-width: 1000px;
+}
+
 html, body {
-    background-color: rgb(2, 22, 30);
     color: white;
     margin: 0;
     padding: 0;
@@ -20,13 +24,13 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     font-size: 1.1em;
-    background-color: linen;  
+    background-color: #282828
 }
 
 .title h1 {
@@ -40,7 +44,7 @@ html, body {
 
 .title a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: normal;
     font-family: "Limelight", sans-serif;
     font-size: 1.6em;
@@ -59,7 +63,7 @@ html, body {
 }
 
 .nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     letter-spacing: 0.12em;
     display: inline-block;
@@ -76,7 +80,7 @@ html, body {
     background: none repeat scroll 0 0 transparent;
     height: 2px;
     width: 0;
-    background: black;
+    background: white;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -93,16 +97,20 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: rgb(18, 18, 18);
 }
 
 .section-container {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--content-width);
+    padding: 0 1rem;
+    
 }
 
 .section {
     padding: 25px;
     font-size: 1.2em;
-    max-width: 1000px;
     margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -112,7 +120,7 @@ html, body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 1em;
     font-size: 1.5em;
 }
@@ -123,13 +131,24 @@ html, body {
     font-size: 2.4em;
     font-family: "Bayon", "sans-serif";
     margin: 10px;
+    color: rgb(68, 119, 206)
 }
 
 .introduce {
     text-align: center;
     font-weight: normal;
-    font-size: 6em;
     margin: 0;
+    font-size: 6em;
+}
+
+.section-title {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    font-size: 2em;
+    color: rgb(68, 119, 206)
+    
 }
 
 
@@ -155,8 +174,15 @@ html, body {
     max-width: 70px;
 }
 
+.main-text {
+    color: rgb(187, 187, 187);
+}
+
+h4 {
+    color: white;
+}
+
 #about {
-    background-color: rgb(10, 25, 47);
     font-size: 1.5em;
 }
 
@@ -165,7 +191,6 @@ html, body {
 }
 
 #contact {
-    background-color: rgb(2, 15, 20);
     font-size: 1.5em;
 }
 
@@ -201,7 +226,7 @@ html, body {
     .nav-with-icon a.nav-icon {
         display: block;
         padding: 0;
-        color: black;
+        color: white;
         font-size: 2em;
         margin-right: 45px;
     }
