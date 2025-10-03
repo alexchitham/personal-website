@@ -30,7 +30,7 @@ html, body {
     width: 100%;
     z-index: 1000;
     font-size: 1.1em;
-    height: 100px;
+    min-height: 100px;
     background-color: #282828
 }
 
@@ -313,18 +313,23 @@ h4 {
 /* --------------------- RESPONSIVENESS AND RESIZING -------------------------- */
 
 @media screen and (max-width: 1500px) {
-    .profile-pic {
-        height: auto;
-        max-width: 500px;
-    }
-
+    
     .home {
         font-size: 1.1em;
+    }
+
+    .profile-pic {
+        max-width: 500px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 1310px) {
-    .nav ul {display: none;}
+
+    .nav ul {
+        display: none;
+    }
+
     .nav-with-icon a.nav-icon {
         display: block;
         padding: 0;
@@ -339,34 +344,34 @@ h4 {
 
     .nav-with-icon.responsive ul {
         display: block;
-        top: 100%;
         font-size: 1em;
         max-width: 240px;
+        margin: 0 auto;
         padding-bottom: 15px;
-        margin-left: auto;
-        margin-right: auto;
     }
+
     .nav-with-icon.responsive .nav-icon {
         position: fixed;
         right: 0;
         top: 32px;
         font-size: 2em;
     }
+
     .nav-with-icon.responsive a {
         text-align: center;
         display: block;
-        
     }
 }
 
+
 @media screen and (max-width: 1115px) {
+
     .home {
         flex-direction: column-reverse;
         font-size: 1.0em;
     }
 
     .profile-pic {
-        height: auto;
         max-width: 440px;
     }
 }
@@ -378,13 +383,14 @@ h4 {
     }
 
     .title h1 {
-        padding-top: 33px;
-        padding-bottom: 32px;
-        padding-left: 30px;
+        padding: 33px 15px
+    }
+    .home {
+        justify-content: flex-end;
+        font-size: 0.7em;
     }
 
     .profile-pic {
-        height: auto;
         max-width: 250px;
     }
 
@@ -392,37 +398,19 @@ h4 {
         padding-top: 90px;
     }
 
-    .home {
-        font-size: 0.7em;
-        justify-content: flex-end;
-    }
-
     .introduce {
         font-size: 5em;
     }
 
-    #about {
-        font-size: 1em;
-        background-color: lightblue;
-    }
     
-    #skills {
-        font-size: 1em;
-    }
-    
-    #projects {
-        font-size: 1em;
-    }
-
-    #qualifications {
-        font-size: 1em;
+    .section {
+        font-size: 0.8em;
     }
 }
 
 @media screen and (max-width: 450px) {
 
     .profile-pic {
-        height: auto;
         max-width: 230px;
     }
 }
